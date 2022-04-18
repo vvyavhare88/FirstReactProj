@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import Alert from './components/Alert';
 
 import {
-  BrowserRouter as Router,
+ BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -62,13 +62,13 @@ function App() {
         {/*/users-->Component1
          /users/home-->component2
         */}
-          <Route  exact path="/about">
+         <Route  exact path="/about">
             <About />
           </Route>
-          <Route exact path="/">
+      <Route exact path="/">
           <TextForm showAlert={showAlert} heading="Enter a text to analyze" mode={mode}/>
           </Route>
-        </Switch>       
+      </Switch>       
      </div>
 </Router>
     </>
